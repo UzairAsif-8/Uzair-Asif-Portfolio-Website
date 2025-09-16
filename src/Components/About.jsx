@@ -46,7 +46,7 @@ function AboutMeCard() {
           {/* Social Icons */}
           <div className="flex justify-center gap-6 mt-8">
             <a
-              href="https://github.com/uzairasif"
+              href="https://github.com/UzairAsif-8"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,7 +57,7 @@ function AboutMeCard() {
               />
             </a>
             <a
-              href="https://instagram.com/uzairasif"
+              href="https://www.instagram.com/thenameis._.uzair?igsh=MWRlcmx0bGMydHh5OQ=="
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -68,7 +68,7 @@ function AboutMeCard() {
               />
             </a>
             <a
-              href="https://twitter.com/uzairasif"
+              href="https://x.com/uzairasif_8?s=21"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -79,7 +79,7 @@ function AboutMeCard() {
               />
             </a>
             <a
-              href="https://linkedin.com/in/uzairasif"
+              href="https://www.linkedin.com/in/muhammad-uzair-asif-760539369/?originalSubdomain=pk"
               target="_blank"
               rel="noopener noreferrer"
             >
