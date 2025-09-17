@@ -4,6 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import "../App.css";
 import "animate.css";
+import { h1 } from "framer-motion/client";
 
 function Header() {
   return (
