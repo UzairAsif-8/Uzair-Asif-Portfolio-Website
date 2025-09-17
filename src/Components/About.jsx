@@ -4,21 +4,22 @@ import githubLogo from "../assets/logos/github.png";
 import instaLogo from "../assets/logos/instagram.png";
 import twitterLogo from "../assets/logos/twitter.png";
 import linkedinLogo from "../assets/logos/linkedin.png";
-
+import useIsMobile from "./Hooks/useIsMobile"; // adjust path as needed
 function AboutMeCard() {
+  const isMobile = useIsMobile();
   return (
     <div
       id="about"
       className="bg-black px-6 sm:px-8 lg:px-16 py-16 flex justify-center items-center overflow-hidden"
     >
       <Tilt
-        glareEnable={true}
+        glareEnable={!isMobile}
         glareMaxOpacity={0.1}
-        scale={0.99}
-        tiltMaxAngleX={20}
-        tiltMaxAngleY={20}
-        gyroscope={true}
-        tiltEnable={true}
+        scale={isMobile ? 1 : 0.99}
+        tiltMaxAngleX={isMobile ? 0 : 20}
+        tiltMaxAngleY={isMobile ? 0 : 20}
+        gyroscope={!isMobile}
+        tiltEnable={!isMobile}
         className="transition-transform duration-300 ease-in-out w-full max-w-5xl"
       >
         <div className="bg-white/10 backdrop-blur-md border border-gray-600 rounded-3xl shadow-lg p-8 sm:p-10 text-white hover:cursor-pointer">
