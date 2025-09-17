@@ -29,6 +29,7 @@ function Projects() {
               className="w-[80%] rounded-[30px] p-4 lg:p-7 pb-2 
                         hover:scale-105 hover:cursor-pointer transition-transform
                         border border-gray-600 lg:border-none"
+              loading="lazy"
               src={data.image}
               alt={data.name}
             />
@@ -49,6 +50,7 @@ function Projects() {
               >
                 View Code
                 <img
+                  loading="lazy"
                   className="size-4 lg:size-6"
                   src={githubLogo}
                   alt="GitHub Logo"
@@ -57,6 +59,7 @@ function Projects() {
 
               <a
                 href={data.liveDemo}
+                loading="lazy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white h-10 sm:h-11 lg:h-12 w-full sm:w-32 lg:w-36 rounded-xl lg:rounded-2xl border border-gray-500

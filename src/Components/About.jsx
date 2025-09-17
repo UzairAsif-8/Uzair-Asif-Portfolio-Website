@@ -55,6 +55,7 @@ function AboutMeCard() {
                 src={githubLogo}
                 alt="GitHub"
                 className="w-8 h-8 hover:scale-110 transition-transform"
+                loading="lazy"
               />
             </a>
             <a
@@ -66,6 +67,7 @@ function AboutMeCard() {
                 src={instaLogo}
                 alt="Instagram"
                 className="w-8 h-8 hover:scale-110 transition-transform"
+                loading="lazy"
               />
             </a>
             <a
@@ -77,6 +79,7 @@ function AboutMeCard() {
                 src={twitterLogo}
                 alt="Twitter"
                 className="w-8 h-8 hover:scale-110 transition-transform"
+                loading="lazy"
               />
             </a>
             <a
@@ -88,6 +91,7 @@ function AboutMeCard() {
                 src={linkedinLogo}
                 alt="LinkedIn"
                 className="w-8 h-8 hover:scale-110 transition-transform"
+                loading="lazy"
               />
             </a>
           </div>

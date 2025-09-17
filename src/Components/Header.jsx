@@ -13,6 +13,7 @@ function Header() {
       <div className="relative w-full bg-black">
         <img
           className="w-full h-full object-cover sm:object-contain"
+          loading="lazy"
           src={photo}
           alt="My Picture"
         />

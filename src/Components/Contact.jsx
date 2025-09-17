@@ -27,6 +27,7 @@ function Contact() {
     <div id="contact" className="relative w-full bg-black">
       {/* Background Image */}
       <img
+        loading="lazy"
         className="h-[100vh] w-full object-cover"
         src={photo}
         alt="Contact Background"
