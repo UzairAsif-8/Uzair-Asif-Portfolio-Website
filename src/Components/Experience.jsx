@@ -20,13 +20,32 @@ function Experience() {
               Enlive Tech Inovations
             </h2>
             <p className="text-gray-400 text-sm sm:text-base max-w-md sm:w-90 mt-2">
-              Contributed to real-world frontend projects during a web
-              development internship—enhancing UI components and responsive
+              Contributed to real-world projects during a web development
+              internship—enhancing UI components and responsive layouts while
+              expanding into backend technologies like Node.js and MongoDB.
+            </p>
+            <p className="text-green-400 text-xs sm:text-sm mt-1">
+              July, 2025 - Present
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-4 sm:gap-5 mt-10 sm:-ml-10 px-6 sm:px-0">
+          <div className="bg-gray-500 h-0.5 sm:h-50  sm:w-0.5 mb-4 sm:mb-7"></div>
+          <div>
+            <h1 className="text-white text-xl sm:text-2xl font-bold">
+              Front-End Web Developer Intern
+            </h1>
+            <h2 className="text-gray-300 text-sm sm:text-md font-bold">
+              AhDev101
+            </h2>
+            <p className="text-gray-400 text-sm sm:text-base max-w-md sm:w-90 mt-2">
+              Working on real-world frontend projects during a Front-End Web
+              Development internship—enhancing UI components and responsive
               layouts while expanding into backend technologies like Node.js and
               MongoDB.
             </p>
             <p className="text-green-400 text-xs sm:text-sm mt-1">
-              July, 2025 - Present
+              September, 2025 - Present
             </p>
           </div>
         </div>
