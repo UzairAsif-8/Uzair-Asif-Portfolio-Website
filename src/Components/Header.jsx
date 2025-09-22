@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "../assets/Images/My-Image.jpg";
+import photo from "../assets/Images/My-Image-2.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import "../App.css";

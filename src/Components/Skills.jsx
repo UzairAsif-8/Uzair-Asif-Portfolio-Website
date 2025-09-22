@@ -40,12 +40,7 @@ function SkillsCarousel() {
         <div className="carousel hover:cursor-pointer">
           {skills.map((skill, i) => (
             <div key={i} className="carousel-card" style={{ "--i": i }}>
-              <img
-                src={skill.logo}
-                alt={skill.name}
-                className="skill-logo"
-                loading="lazy"
-              />
+              <img src={skill.logo} alt={skill.name} className="skill-logo" />
               <h3>{skill.name}</h3>
               <p>{skill.text}</p>
             </div>
