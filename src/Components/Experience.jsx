@@ -14,6 +14,58 @@ function Experience() {
           <div className="bg-gray-500 h-0.5 sm:h-50  sm:w-0.5 mb-4 sm:mb-7"></div>
           <div>
             <h1 className="text-white text-xl sm:text-2xl font-bold">
+              Founder & CEO
+            </h1>
+            <h2 className="text-gray-300 text-sm sm:text-md font-bold">
+              Axiolink Systems
+            </h2>
+            <p className="text-gray-400 text-sm sm:text-base max-w-md sm:w-90 mt-2">
+              Founded and led Axiolink Systems—building the company from the
+              ground up, shaping its vision and strategy, leading the team, and
+              driving initiatives that created real-world impact and growth.
+            </p>
+            <p className="text-green-400 text-xs sm:text-sm mt-1">Full Time</p>
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-4 sm:gap-5 mt-10 sm:-ml-10 px-6 sm:px-0">
+          <div className="bg-gray-500 h-0.5 sm:h-50  sm:w-0.5 mb-4 sm:mb-7"></div>
+          <div>
+            <h1 className="text-white text-xl sm:text-2xl font-bold">
+              Co-Founder
+            </h1>
+            <h2 className="text-gray-300 text-sm sm:text-md font-bold">
+              Enlive Tech Inovations
+            </h2>
+            <p className="text-gray-400 text-sm sm:text-base max-w-md sm:w-90 mt-2">
+              Became Co-Founder of Enlive Tech Innovations—shaping the company’s
+              vision and strategy, leading initiatives with the team, and
+              driving projects that delivered real-world impact and growth.
+            </p>
+            <p className="text-green-400 text-xs sm:text-sm mt-1">Full Time</p>
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-4 sm:gap-5 mt-10 sm:-ml-10 px-6 sm:px-0">
+          <div className="bg-gray-500 h-0.5 sm:h-50  sm:w-0.5 mb-4 sm:mb-7"></div>
+          <div>
+            <h1 className="text-white text-xl sm:text-2xl font-bold">
+              Mentor/Instructor
+            </h1>
+            <h2 className="text-gray-300 text-sm sm:text-md font-bold">
+              Bootcamps, Courses, Workshops
+            </h2>
+            <p className="text-gray-400 text-sm sm:text-base max-w-md sm:w-90 mt-2">
+              Served as a mentor and instructor at bootcamps and
+              workshops—guiding and supporting 100+ students while sharing
+              practical knowledge, fostering growth, and helping them build
+              real-world skills.
+            </p>
+            <p className="text-green-400 text-xs sm:text-sm mt-1">Full Time</p>
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center gap-4 sm:gap-5 mt-10 sm:-ml-10 px-6 sm:px-0">
+          <div className="bg-gray-500 h-0.5 sm:h-50  sm:w-0.5 mb-4 sm:mb-7"></div>
+          <div>
+            <h1 className="text-white text-xl sm:text-2xl font-bold">
               Web Development Intern
             </h1>
             <h2 className="text-gray-300 text-sm sm:text-md font-bold">
@@ -25,7 +77,7 @@ function Experience() {
               expanding into backend technologies like Node.js and MongoDB.
             </p>
             <p className="text-green-400 text-xs sm:text-sm mt-1">
-              July, 2025 - Present
+              July, 2025 - September, 2025
             </p>
           </div>
         </div>

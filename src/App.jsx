@@ -9,6 +9,7 @@ import Education from "./Components/Education";
 import Experience from "./Components/Experience";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import CompanyCard from "./Components/Company";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
       <Projects />
       <Education />
       <Experience />
-      <Testimonials />
+      {/* <Testimonials /> */}
+      <CompanyCard />
       <Contact />
       <Footer />
     </>

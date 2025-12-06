@@ -34,14 +34,18 @@ function AboutMeCard() {
             <span className="font-semibold text-green-400">
               Muhammad Uzair Asif
             </span>
-            , a frontend developer passionate about crafting clean, responsive,
-            and visually engaging web interfaces. I specialize in building
-            user-friendly designs that perform seamlessly across devices,
-            blending creativity with functionality. With a strong foundation in
-            C++ and Object-Oriented Programming, I write structured and
-            maintainable code. I also enhance interfaces with subtle animations
-            and interactive elements, ensuring every project is dynamic,
-            impactful, and memorable.
+            , the{" "}
+            <span className="font-semibold text-blue-400">
+              Founder & CEO of Axiolink Systems
+            </span>{" "}
+            and a full-stack developer passionate about building impactful,
+            real-world applications. I lead the company’s vision and strategy,
+            manage and inspire the team, and drive projects from concept to
+            execution. Beyond leading Axiolink, I have mentored 100+ students
+            through bootcamps and workshops, helping them develop practical
+            skills and succeed in their careers. My work blends strategic
+            thinking, technical expertise, and creative problem-solving to
+            deliver solutions that are both innovative and meaningful.
           </p>
 
           {/* Social Icons */}

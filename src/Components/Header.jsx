@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import photo from "../assets/Images/My-Image-2.jpg";
+import qr from "../assets/Images/qr-code.png"; // Add your QR image
 import { TypeAnimation } from "react-type-animation";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import "../App.css";
 import "animate.css";
-import { h1 } from "framer-motion/client";
 
-function Header() {
+export default function Header() {
+  const [showPopup, setShowPopup] = useState(false);
+
   return (
     <div id="home" className="w-full h-screen relative bg-black">
       {/* Background Image */}
@@ -24,19 +26,15 @@ function Header() {
       <div className="absolute top-5 left-5 md:left-15 flex flex-wrap gap-4 md:gap-6 text-gray-200 text-sm sm:text-base md:text-lg font-light z-20">
         <a href="#home" className="relative group">
           Home
-          <span className="absolute left-0 -bottom-1 h-[1.5px] w-full bg-white transition-all duration-300 "></span>
         </a>
         <a href="#about" className="relative group">
           About
-          <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
         </a>
         <a href="#projects" className="relative group">
           Projects
-          <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
         </a>
         <a href="#contact" className="relative group">
           Contact
-          <span className="absolute left-0 -bottom-1 h-[1.5px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
         </a>
       </div>
 
@@ -50,7 +48,16 @@ function Header() {
         </h1>
         <h1 className="text-gray-400 font-bold text-2xl sm:text-3xl lg:text-6xl mb-6 max-w-[90%] sm:max-w-[70%]">
           <TypeAnimation
-            sequence={["FRONTEND DEVELOPER", 2000, "REACT DEVELOPER", 2000]}
+            sequence={[
+              "FULL STACK DEVELOPER",
+              2000,
+              "REACT DEVELOPER",
+              2000,
+              "MERN STACK DEVELOPER",
+              2000,
+              "FOUNDER & CEO",
+              2000,
+            ]}
             wrapper="span"
             speed={40}
             style={{ display: "inline-block" }}
@@ -59,34 +66,63 @@ function Header() {
           />
         </h1>
         <p className="text-white font-light text-sm sm:text-base lg:text-lg max-w-xl mb-8">
-          I build responsive, dynamic, and user-focused interfaces that bring
-          ideas to life. My goal is to craft seamless digital experiences that
-          inspire and engage users.
+          I build responsive, dynamic, and user-focused interfaces.
         </p>
 
         {/* Buttons */}
         <div className="flex gap-4 flex-wrap">
-          {/* Available For Work */}
           <a href="#contact">
-            <button className="text-white px-5 py-3 rounded-full border border-gray-500 bg-white/10 shadow-[0_0_5px_rgba(255,255,255,0.8)] hover:shadow-[0_0_10px_rgba(255,255,255,1)] transition-all duration-300 flex items-center gap-2 hover:cursor-pointer">
-              <span
-                className="h-2 w-2 rounded-full bg-green-400 animate__animated animate__flash animate__infinite"
-                style={{ animationDuration: "2s" }}
-              ></span>
+            <button className="text-white px-5 py-3 rounded-full border border-gray-500 bg-white/10 shadow hover:shadow-lg transition-all duration-300 flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-green-400 animate__animated animate__flash animate__infinite"></span>
               Available For Work
             </button>
           </a>
 
-          {/* Resume Download */}
           <a href="/Uzair's Resume.pdf" download>
-            <button className="text-white px-5 py-3 rounded-full border border-gray-500 bg-white/10 shadow-[0_0_5px_rgba(255,255,255,0.8)] hover:shadow-[0_0_10px_rgba(255,255,255,1)] transition-all duration-300 flex items-center gap-2 hover:cursor-pointer">
+            <button className="text-white px-5 py-3 rounded-full border border-gray-500 bg-white/10 shadow hover:shadow-lg transition-all duration-300 flex items-center gap-2">
               Resume <FaArrowUpRightFromSquare className="text-green-400" />
             </button>
           </a>
+
+          {/* Connect With Me Popup Trigger */}
+          <button
+            onClick={() => setShowPopup(true)}
+            className="text-white px-5 py-3 rounded-full border border-gray-500 bg-white/10 shadow hover:shadow-lg transition-all duration-300 flex items-center gap-2"
+          >
+            <span className="h-2 w-2 rounded-full bg-green-400 animate__animated animate__flash animate__infinite"></span>
+            Connect With Me
+          </button>
         </div>
       </div>
+
+      {/* POPUP OVERLAY */}
+      {showPopup && (
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-md flex justify-center items-center z-50 animate__animated animate__fadeIn">
+          <div className="bg-white/10 backdrop-blur-xl border border-gray-500 rounded-2xl p-8 w-[90%] max-w-md text-center shadow-lg animate__animated animate__zoomIn">
+            <h2 className="text-white text-3xl font-bold mb-2">
+              Muhammad Uzair Asif
+            </h2>
+            <p className="text-gray-300 text-lg mb-1">Founder & CEO</p>
+            <p className="text-gray-400 text-sm mb-4">Axiolink Systems</p>
+
+            {/* QR Code */}
+            <div className="flex justify-center mb-6">
+              <img
+                src={qr}
+                alt="QR Code"
+                className="w-40 h-40 rounded-xl shadow-lg"
+              />
+            </div>
+
+            <button
+              onClick={() => setShowPopup(false)}
+              className="mt-4 px-6 py-2 rounded-full bg-white/20 border border-gray-500 text-white hover:bg-white/30 transition-all"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
-
-export default Header;
